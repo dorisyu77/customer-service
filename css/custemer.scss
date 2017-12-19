@@ -548,6 +548,15 @@ h6 {
 			color: #fff;
 		}
 	}
+	.been-contracted {
+		&::after {
+			content: '已發包';
+			background-color: red;
+			border-radius: 5px;
+			margin-left: 5px;
+			padding: 2px 10px;
+		}
+	}
 }
 
 @media (max-width: 600px) {
