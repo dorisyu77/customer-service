@@ -378,10 +378,32 @@ h6 {
         display: block;
         padding: 10px 0;
         position: relative; }
-        .cls-thesameheight-left ul li a:hover {
-          font-weight: 600;
-          color: #357ebd; }
-          .cls-thesameheight-left ul li a:hover::after {
+        @media (min-width: 601px) {
+          .cls-thesameheight-left ul li a:hover {
+            font-weight: 600;
+            color: #357ebd; }
+            .cls-thesameheight-left ul li a:hover::after {
+              content: "\e080";
+              font-family: 'Glyphicons Halflings';
+              font-style: normal;
+              font-size: 14px;
+              color: #357ebd;
+              padding-right: 10px;
+              position: absolute;
+              z-index: 1;
+              right: 0;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              margin: auto; } }
+    .cls-thesameheight-left ul li.active {
+      font-weight: 600;
+      color: #357ebd; }
+      .cls-thesameheight-left ul li.active a {
+        color: #357ebd; }
+        @media (min-width: 601px) {
+          .cls-thesameheight-left ul li.active a::after {
             content: "\e080";
             font-family: 'Glyphicons Halflings';
             font-style: normal;
@@ -395,27 +417,7 @@ h6 {
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            margin: auto; }
-    .cls-thesameheight-left ul li.active {
-      font-weight: 600;
-      color: #357ebd; }
-      .cls-thesameheight-left ul li.active a {
-        color: #357ebd; }
-        .cls-thesameheight-left ul li.active a::after {
-          content: "\e080";
-          font-family: 'Glyphicons Halflings';
-          font-style: normal;
-          font-size: 14px;
-          color: #357ebd;
-          padding-right: 10px;
-          position: absolute;
-          z-index: 1;
-          right: 0;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          margin: auto; }
+            margin: auto; } }
 
 .cls-thesameheight-right .top-title {
   background: #5492c7;

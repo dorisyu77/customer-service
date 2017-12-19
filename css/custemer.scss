@@ -470,9 +470,34 @@ h6 {
 				display: block;
 				padding: 10px 0;
 				position: relative;
-				&:hover {
-					font-weight: 600;
-					color: #357ebd;
+				@media (min-width: 601px) {
+					&:hover {
+						font-weight: 600;
+						color: #357ebd;
+						&::after {
+							content: "\e080";
+							font-family: 'Glyphicons Halflings';
+							font-style: normal;
+							font-size: 14px;
+							color: #357ebd;
+							padding-right: 10px;
+							position: absolute;
+							z-index: 1;
+							right: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							margin: auto;
+						}
+					}
+				}
+			}
+		}
+		li.active {
+			font-weight: 600;
+			color: #357ebd;
+			a {
+				color: #357ebd;
+				@media (min-width: 601px) {
 					&::after {
 						content: "\e080";
 						font-family: 'Glyphicons Halflings';
@@ -487,27 +512,6 @@ h6 {
 						transform: translateY(-50%);
 						margin: auto;
 					}
-				}
-			}
-		}
-		li.active {
-			font-weight: 600;
-			color: #357ebd;
-			a {
-				color: #357ebd;
-				&::after {
-					content: "\e080";
-					font-family: 'Glyphicons Halflings';
-					font-style: normal;
-					font-size: 14px;
-					color: #357ebd;
-					padding-right: 10px;
-					position: absolute;
-					z-index: 1;
-					right: 0;
-					top: 50%;
-					transform: translateY(-50%);
-					margin: auto;
 				}
 			}
 		}
