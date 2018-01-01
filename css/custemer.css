@@ -7,10 +7,10 @@ h5,
 h6 {
   font-family: "微軟正黑體"; }
 
-.login {
+.nav-blue-btn {
   padding-top: 9px;
   padding-bottom: 9px; }
-  .login .btn-info {
+  .nav-blue-btn .btn-info {
     background-color: #0075cd;
     border-color: #0075cd;
     margin: 0px 5px;
@@ -26,25 +26,45 @@ h6 {
 .navbar-custom ul.nav li a.signup-btn {
   background-color: #0075cd;
   border-color: #0075cd;
+  margin: 0px 5px;
+  width: 97%;
+  position: relative;
+  display: inline-block;
+  outline: none;
   color: #fff;
-  padding: 8px 10px;
-  border-radius: 5px;
-  top: -50%;
-  margin-top: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center; }
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 7px 10px;
+  border-radius: 4px; }
   .navbar-custom ul.nav li a.signup-btn:hover {
     background-color: #0075cd;
     border-color: #0075cd;
+    margin: 0px 5px;
+    width: 97%;
+    position: relative;
+    display: inline-block;
+    outline: none;
     color: #fff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    top: -50%;
-    margin-top: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center; }
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 7px 10px;
+    border-radius: 4px; }
 
 .modal-header {
   background-color: #0075cd;
@@ -87,6 +107,13 @@ h6 {
     margin: 0 0 0px; }
   .poperror-msg a {
     color: #0075cd; }
+
+.blue-text {
+  color: #0075cd;
+  cursor: pointer; }
+
+.red-text {
+  color: red; }
 
 .red-msg {
   color: red;

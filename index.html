@@ -64,16 +64,19 @@
               <a href="#service">工項服務</a>
             </li>
             <li>
-              <a href="legal.html">法律聲明</a>
+              <a href="qa.html">討論區Q&A</a>
+            </li>
+            <li class="nav-blue-btn">
+              <a href="post.html" class="signup-btn">刊登需求</a>
             </li>
             <li>
               <a href="member.html">會員須知</a>
             </li>
-            <li class="login">
+            <li class="nav-blue-btn">
               <!-- Trigger the modal with a button -->
               <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#login">登錄會員</button>
             </li>
-            <li>
+            <li class="nav-blue-btn">
               <a href="signup.html" class="signup-btn">加入會員</a>
             </li>
           </ul>
@@ -182,295 +185,120 @@
                   <h4 class="top-title">室內設計裝修</h4>
                   <div class="member-content">
                     <div class="">
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                          <a href="#qa" aria-controls="qa" role="tab" data-toggle="tab">
-                            <h5 class="tab-title">討論區Q&A</h5>
-                          </a>
-                        </li>
-                        <li role="presentation">
-                          <a href="#post" aria-controls="post" role="tab" data-toggle="tab">
-                            <h5 class="tab-title">刊登需求</h5>
-                          </a>
-                        </li>
-                        <li role="presentation">
-                          <a href="#guest" aria-controls="guest" role="tab" data-toggle="tab">
-                            <h5 class="tab-title">找尋客戶</h5>
-                          </a>
-                        </li>
-                      </ul>
-                      <!-- Tab panes Q&A -->
                       <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="qa">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="cls-test-center tab-content-title">
-                                <button class="tab-title-btn" type="button">請提出您的問題</button>
-                              </div>
-                              <table class="rwd-table">
-                                <tbody>
-                                  <tr>
-                                    <th>問題</th>
-                                    <th>ID</th>
-                                    <th>日期</th>
-                                  </tr>
-                                  <tr>
-                                    <td data-th="問題">
-                                      <a href="discuss.html">我家浴室的天花板漏水了；樓上說..... </a>
-                                    </td>
-                                    <td data-th="ID">S6697</td>
-                                    <td data-th="日期">106/12/15</td>
-                                  </tr>
-                                  <tr>
-                                    <td data-th="問題">我家浴室的天花板漏水了；樓上說..... </td>
-                                    <td data-th="ID">S6697</td>
-                                    <td data-th="日期">106/12/15</td>
-                                  </tr>
-                                  <tr>
-                                    <td data-th="問題">我家浴室的天花板漏水了；樓上說..... </td>
-                                    <td data-th="ID">S6697</td>
-                                    <td data-th="日期">106/12/15</td>
-                                  </tr>
-                                  <tr>
-                                    <td data-th="問題">我家浴室的天花板漏水了；樓上說..... </td>
-                                    <td data-th="ID">S6697</td>
-                                    <td data-th="日期">106/12/15</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <div id="pagination-block" class="cls-test-center">
-                                <ul class="pagination">
-                                  <li>
-                                    <a href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="active">
-                                    <a href="#">1
-                                      <span class="sr-only">(current)</span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href=#>2</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>3</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>4</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>5</a>
-                                  </li>
-                                  <li>
-                                    <a href=# aria-label=Next>
-                                      <span aria-hidden=true>&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
+                        <!--guest start-->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="cls-test-center tab-content-title">
+                              <p>僅VIP會員可查閱已刊登需求客戶之完整連絡資訊</p>
+                              <button class="tab-title-btn" type="button">點我成為本站VIP
+                                <span class="red-msg">限時免費</span>
+                              </button>
+                            </div>
+                            <table class="rwd-table guest-table-list">
+                              <tbody>
+                                <tr>
+                                  <th>刊登者</th>
+                                  <th colspan="3" class="cls-test-center">
+                                    <span class="been-contracted">LAWNS888</span>
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td>連絡人</td>
+                                  <td>蕭先生</td>
+                                  <td>日期</td>
+                                  <td>106.11.14</td>
+                                </tr>
+                                <tr>
+                                  <td>連絡電話</td>
+                                  <td colspan="3">0922-855-965</td>
+                                </tr>
+                                <tr>
+                                  <td>地區</td>
+                                  <td colspan="3">新北市三重區</td>
+                                </tr>
+                                <tr>
+                                  <td>預算</td>
+                                  <td colspan="3">50萬</td>
+                                </tr>
+                                <tr>
+                                  <td>類型</td>
+                                  <td colspan="3">住家</td>
+                                </tr>
+                                <tr>
+                                  <td>說明</td>
+                                  <td colspan="3">地磚換成木地板、兩間廁所及廚房翻新、牆面重新粉刷、木門更換</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="rwd-table guest-table-list">
+                              <tbody>
+                                <tr>
+                                  <th>刊登者</th>
+                                  <th colspan="3" class="cls-test-center">LAWNS888</th>
+                                </tr>
+                                <tr>
+                                  <td>連絡人</td>
+                                  <td>蕭先生</td>
+                                  <td>日期</td>
+                                  <td>106.11.14</td>
+                                </tr>
+                                <tr>
+                                  <td>連絡電話</td>
+                                  <td colspan="3">0922-855-965</td>
+                                </tr>
+                                <tr>
+                                  <td>地區</td>
+                                  <td colspan="3">新北市三重區</td>
+                                </tr>
+                                <tr>
+                                  <td>預算</td>
+                                  <td colspan="3">50萬</td>
+                                </tr>
+                                <tr>
+                                  <td>類型</td>
+                                  <td colspan="3">住家</td>
+                                </tr>
+                                <tr>
+                                  <td>說明</td>
+                                  <td colspan="3">地磚換成木地板、兩間廁所及廚房翻新、牆面重新粉刷、木門更換</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div id="pagination-block" class="cls-test-center">
+                              <ul class="pagination">
+                                <li>
+                                  <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                  </a>
+                                </li>
+                                <li class="active">
+                                  <a href="#">1
+                                    <span class="sr-only">(current)</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href=#>2</a>
+                                </li>
+                                <li>
+                                  <a href=#>3</a>
+                                </li>
+                                <li>
+                                  <a href=#>4</a>
+                                </li>
+                                <li>
+                                  <a href=#>5</a>
+                                </li>
+                                <li>
+                                  <a href=# aria-label=Next>
+                                    <span aria-hidden=true>&raquo;</span>
+                                  </a>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="post">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="cls-test-center tab-content-title">
-                                <button class="tab-title-btn" type="button">於本站刊登您的施工需求與聯絡資訊，以供專業廠商與您聯繫</button>
-                              </div>
-                              <div class="skill-home col-sm-8 col-sm-offset-2">
-                                <div class="confirmForm">
-                                  <form class="form-horizontal" role="form">
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label">
-                                        <span>*</span>公司名稱</label>
-                                      <div class="col-sm-10">
-                                        <input class="form-control" placeholder="請輸入公司名稱">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label">
-                                        <span>*</span>姓名</label>
-                                      <div class="col-sm-10">
-                                        <input class="form-control" placeholder="請您務必填寫真實姓名">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label" for="sel1">
-                                        <span>*</span>地區
-                                        <!-- address-->
-                                      </label>
-                                      <div class="col-sm-2">
-                                        <select class="form-control">
-                                          <option>縣市</option>
-                                          <option>基隆市</option>
-                                          <option>臺北市</option>
-                                          <option>臺中市</option>
-                                          <option>高雄市</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-sm-2">
-                                        <select class="form-control">
-                                          <option>大安區</option>
-                                          <option>北屯區</option>
-                                          <option>沙鹿區</option>
-                                          <option>南港區</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <input class="form-control">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label">
-                                        <span>*</span>連絡電話</label>
-                                      <div class="col-sm-10">
-                                        <input class="form-control" placeholder="請您填寫市內電話">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label">
-                                        <span>*</span>電子郵件
-                                        <!-- Email-->
-                                      </label>
-                                      <div class="col-sm-10">
-                                        <input class="form-control" id="inputEmail3" type="email" placeholder="輸入電子郵件">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label">
-                                        <span>*</span>施工說明
-                                      </label>
-                                      <div class="col-sm-10">
-                                        <textarea class="form-control" id="message"></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-sm-offset-2 col-sm-10 box-size">
-                                        <button class="w50 btn btn-default cls_btn" type="reset">清除重填</button>
-                                        <button class="w50 btn btn-default btn-send cls_btn" type="submit">確認送出</button>
-                                      </div>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="guest">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="cls-test-center tab-content-title">
-                                <p>僅VIP會員可查閱已刊登需求客戶之完整連絡資訊</p>
-                                <button class="tab-title-btn" type="button">點我成為本站VIP
-                                  <span class="red-msg">限時免費</span>
-                                </button>
-                              </div>
-                              <table class="rwd-table guest-table-list">
-                                <tbody>
-                                  <tr>
-                                    <th>刊登者</th>
-                                    <th colspan="3" class="cls-test-center">
-                                      <span class="been-contracted">LAWNS888</span>
-                                    </th>
-                                  </tr>
-                                  <tr>
-                                    <td>連絡人</td>
-                                    <td>蕭先生</td>
-                                    <td>日期</td>
-                                    <td>106.11.14</td>
-                                  </tr>
-                                  <tr>
-                                    <td>連絡電話</td>
-                                    <td colspan="3">0922-855-965</td>
-                                  </tr>
-                                  <tr>
-                                    <td>地區</td>
-                                    <td colspan="3">新北市三重區</td>
-                                  </tr>
-                                  <tr>
-                                    <td>預算</td>
-                                    <td colspan="3">50萬</td>
-                                  </tr>
-                                  <tr>
-                                    <td>類型</td>
-                                    <td colspan="3">住家</td>
-                                  </tr>
-                                  <tr>
-                                    <td>說明</td>
-                                    <td colspan="3">地磚換成木地板、兩間廁所及廚房翻新、牆面重新粉刷、木門更換</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <table class="rwd-table guest-table-list">
-                                <tbody>
-                                  <tr>
-                                    <th>刊登者</th>
-                                    <th colspan="3" class="cls-test-center">LAWNS888</th>
-                                  </tr>
-                                  <tr>
-                                    <td>連絡人</td>
-                                    <td>蕭先生</td>
-                                    <td>日期</td>
-                                    <td>106.11.14</td>
-                                  </tr>
-                                  <tr>
-                                    <td>連絡電話</td>
-                                    <td colspan="3">0922-855-965</td>
-                                  </tr>
-                                  <tr>
-                                    <td>地區</td>
-                                    <td colspan="3">新北市三重區</td>
-                                  </tr>
-                                  <tr>
-                                    <td>預算</td>
-                                    <td colspan="3">50萬</td>
-                                  </tr>
-                                  <tr>
-                                    <td>類型</td>
-                                    <td colspan="3">住家</td>
-                                  </tr>
-                                  <tr>
-                                    <td>說明</td>
-                                    <td colspan="3">地磚換成木地板、兩間廁所及廚房翻新、牆面重新粉刷、木門更換</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <div id="pagination-block" class="cls-test-center">
-                                <ul class="pagination">
-                                  <li>
-                                    <a href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="active">
-                                    <a href="#">1
-                                      <span class="sr-only">(current)</span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href=#>2</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>3</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>4</a>
-                                  </li>
-                                  <li>
-                                    <a href=#>5</a>
-                                  </li>
-                                  <li>
-                                    <a href=# aria-label=Next>
-                                      <span aria-hidden=true>&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <!--guest end-->
                       </div>
                     </div>
                   </div>
@@ -481,70 +309,90 @@
               <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">防水抓漏</h4>
-                  
+
                 </div>
               </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="wallpaper"><div class="col-sm-10">
+            <div role="tabpanel" class="tab-pane" id="wallpaper">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">窗廉壁紙</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="teardown"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="teardown">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">拆除工程</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="door"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="door">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">門窗玻璃</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="paint"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="paint">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">油漆粉刷</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="airconditioner"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="airconditioner">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">冷凍空調</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="system"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="system">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">系統傢具</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="cleaning"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="cleaning">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">清潔公司</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="moving"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="moving">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">搬家公司</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="hydroppwer"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="hydroppwer">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">水電工程</h4>
-                  
+
                 </div>
-              </div></div>
-            <div role="tabpanel" class="tab-pane" id="audio"><div class="col-sm-10">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="audio">
+              <div class="col-sm-10">
                 <div class="cls-thesameheight-right">
                   <h4 class="top-title">音響設備</h4>
-                  
+
                 </div>
-              </div></div>
+              </div>
+            </div>
           </div>
           <!-- menu-right end-->
         </div>

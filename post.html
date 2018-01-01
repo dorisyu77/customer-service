@@ -56,24 +56,27 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav cls_Menu">
             <li class="active">
-              <a href="#intro">首頁</a>
+              <a href="index.html#intro">首頁</a>
             </li>
             <li>
               <a href="index.html#service">工項服務</a>
             </li>
             <li>
-              <a href="legal.html">法律聲明</a>
+              <a href="qa.html">討論區Q&A</a>
+            </li>
+            <li class="nav-blue-btn">
+              <a href="post.html" class="signup-btn">刊登需求</a>
             </li>
             <li>
               <a href="member.html">會員須知</a>
             </li>
-            <li class="login">
+            <li class="nav-blue-btn">
               <!-- Trigger the modal with a button -->
               <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#login">登錄會員</button>
             </li>
-            <li>
+            <li class="nav-blue-btn">
               <a href="signup.html" class="signup-btn">加入會員</a>
             </li>
           </ul>
@@ -89,7 +92,7 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="section-heading text-center">
-                <h2 class="h-bold">法律聲明</h2>
+                <h2 class="h-bold">刊登需求</h2>
               </div>
             </div>
             <div class="divider-short"></div>
@@ -100,18 +103,96 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div>
-              <div class="confirmForm wow fadeInDown" data-wow-delay="0.1s">
-                <div class="page-wrapper">
-                  <div class="page-body">
-                    <div class="article">
-                      <p class="number-list">
-                        廣告行銷百百種,往往花了大筆廣告預算卻遲遲等不到消費者上門 客源網相信不管使用任何廣告行銷模式最終目的還是希望能帶來客戶, 如果花相同廣告費用,那為什麼不選擇一個能真正為你帶來客戶的網站 客源網提供的是一個業者與消費者的平台,讓業者能更輕易的找到有需求的消費者
-                        當消費者有任何搬家 清潔 買屋 裝潢等需求,就會在客源網留下相關資料 業者只需要登入會員,即可立即查詢消費者需求以及聯絡方式 與其花大錢等待客戶上門,不如加入客源網主動和客戶聯絡。
-                      </p>
-                      <!-- <h4 class="m-top">账户申请：</h4> -->
+            <div class="confirmForm wow fadeInDown" data-wow-delay="0.1s">
+              <div class="page-wrapper">
+                <div class="page-body">
+                  <div class="article">
+                    <!--post-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="cls-test-center tab-content-title">
+                          <button class="tab-title-btn" type="button">於本站刊登您的施工需求與聯絡資訊，以供專業廠商與您聯繫</button>
+                        </div>
+                        <div class="skill-home col-sm-8 col-sm-offset-2">
+                          <div class="confirmForm">
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                  <span>*</span>公司名稱</label>
+                                <div class="col-sm-10">
+                                  <input class="form-control" placeholder="請輸入公司名稱">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                  <span>*</span>姓名</label>
+                                <div class="col-sm-10">
+                                  <input class="form-control" placeholder="請您務必填寫真實姓名">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label" for="sel1">
+                                  <span>*</span>地區
+                                  <!-- address-->
+                                </label>
+                                <div class="col-sm-2">
+                                  <select class="form-control">
+                                    <option>縣市</option>
+                                    <option>基隆市</option>
+                                    <option>臺北市</option>
+                                    <option>臺中市</option>
+                                    <option>高雄市</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-2">
+                                  <select class="form-control">
+                                    <option>大安區</option>
+                                    <option>北屯區</option>
+                                    <option>沙鹿區</option>
+                                    <option>南港區</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-6">
+                                  <input class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                  <span>*</span>連絡電話</label>
+                                <div class="col-sm-10">
+                                  <input class="form-control" placeholder="請您填寫市內電話">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                  <span>*</span>電子郵件
+                                  <!-- Email-->
+                                </label>
+                                <div class="col-sm-10">
+                                  <input class="form-control" id="inputEmail3" type="email" placeholder="輸入電子郵件">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label">
+                                  <span>*</span>施工說明
+                                </label>
+                                <div class="col-sm-10">
+                                  <textarea class="form-control" id="message"></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10 box-size">
+                                  <button class="w50 btn btn-default cls_btn" type="reset">清除重填</button>
+                                  <button class="w50 btn btn-default btn-send cls_btn" type="submit">確認送出</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <!--post end-->
                 </div>
               </div>
             </div>

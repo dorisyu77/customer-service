@@ -56,24 +56,27 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav cls_Menu">
             <li class="active">
-              <a href="#intro">首頁</a>
+              <a href="index.html#intro">首頁</a>
             </li>
             <li>
               <a href="index.html#service">工項服務</a>
             </li>
             <li>
-              <a href="legal.html">法律聲明</a>
+              <a href="qa.html">討論區Q&A</a>
+            </li>
+            <li class="nav-blue-btn">
+              <a href="post.html" class="signup-btn">刊登需求</a>
             </li>
             <li>
               <a href="member.html">會員須知</a>
             </li>
-            <li class="login">
+            <li class="nav-blue-btn">
               <!-- Trigger the modal with a button -->
               <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#login">登錄會員</button>
             </li>
-            <li>
+            <li class="nav-blue-btn">
               <a href="signup.html" class="signup-btn">加入會員</a>
             </li>
           </ul>
@@ -123,18 +126,16 @@
                       <span>*</span>性別</label>
                     <div class="col-sm-10">
                       <input id="r1" type="radio" name="rr">
-                      <label for="r1">
-                        <span></span>男</label>
+                      <label for="r1">男</label>
                       <input id="r2" type="radio" name="rr">
-                      <label for="r2">
-                        <span></span>女</label>
+                      <label for="r2">女</label>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">
                       <span>*</span>身分證號</label>
                     <div class="col-sm-10">
-                      <input class="form-control" placeholder="請您務必填寫真實姓名">
+                      <input class="form-control" placeholder="請您填寫身分證號">
                     </div>
                   </div>
                   <div class="form-group">
@@ -217,8 +218,12 @@
                       <span>*</span>確認密碼</label>
                     <div class="col-sm-10">
                       <input class="form-control" placeholder="確認密碼">
-                      <div class="poperror-msg">如资料经验证有误，将影响会员自身权益，详细规范请查阅。
-                        <a href="javascript: void(0)" data-toggle="modal" data-target="#rule">规章与条例</a>
+                      <div>
+                        <span class="red-text">*</span>
+                        <input value="1" name="RegisterFmo[ruleJob]" id="RegisterFmo_ruleJob" type="checkbox">
+                        <span>我已詳閱</span>
+                        <span class="blue-text" data-toggle="modal" data-target="#rule">法律聲明</span>
+                        <span>瞭解並同意所有規定</span>
                       </div>
                     </div>
                   </div>
@@ -284,21 +289,11 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">规章与条例</h4>
+            <h4 class="modal-title">法律聲明</h4>
           </div>
           <div class="modal-body">
-            <p>1.廠商於加入客源網之同時，即同意接受客源網之會員條款和會員注意事項之規範，如有違反，客源網得取消其參加資格，並就因此所生之損害，得向會員請求損害賠償。 2.會員必須遵守客源網的服務條款、使用規範及其他交易有關之規定，如有違反，即自動喪失參加資格。
-              3.若客源網有參與個人資料之蒐集、處理或利用，會員須同意接受客源網隱私權保護政策；會員同意客源網於辦理聯絡事宜、廣告分析或其他活動網頁上所聲明之方式及特定目的範圍內，得蒐集、處理及利用會員所填寫之個人資料；會員並同意客源網得委託廠商負責執行前述各項事務，該廠商得於必要範圍內使用會員之個人資料，並得將會員提供的資料提供予其他主/協辦單位，使其得於必要範圍內使用會員之個人資料；客源網關於會員個人資料之使用及會員之權益悉依客源網隱私權保護政策之規範。
-              4.本活動若徵求會員提供圖文、照片、影片及其他資料等內容予客源網，會員同意下列事項： 5.會員保證提供予客源網之圖文、照片、影片及其他資料，並無侵害他人權利（包括但不限於智慧財產權、人格權、肖像權及隱私權等）或違反法令之情事。如有違反之虞，客源網得立即移除相關內容，並取消參加資格，會員並應自負法律責任。
-              6.若客源網因使用會員所提供之圖文、照片、影片及其他資料遭第三人請求、索賠、提出民、刑事訴訟或主張任何法律上之權利，會員應賠償客源網因此所生之全部損失與費用。 7.客源網對會員所提供之圖文、照片、影片及其他資料有審查權，若不符合本活動之規定，經查證屬實，得取消其參加資格。
-              8.會員同意授權客源網於符合本活動目的的情形下，使用及節錄其為參加本活動所提供之圖文、照片、影片及其他資料，做成活動花絮或宣傳使用。 9.會員保證所有填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。如有不實或不正確之情事，將被取消參加資格。如因此致客源網有致損害於會員或其他任何第三人，會員應負一切相關責任。
-              10.如有任何因電腦、網路、電話、技術或不可歸責於客源網之事由，而使會員所寄出或登錄之資料有遲延、遺失、錯誤、無法辨識或毀損之情況，客源網不負任何法律責任，會員亦不得因此異議。 11. 客源網於下列情形得暫停或中斷本服務之全部或一部，會員不得因此請求賠償或補償：
-              ● 對本服務相關軟硬體設備進行搬遷、更換、升級、保養或維修時。 ● 會員有違反法令、本約定條款或其他應遵守事項之情形。 ● 客源網代收款項或會員帳戶內餘額經法院或檢察官命令扣押時。 ● 因第三人之行為或其他不可歸責於客源網之事由所致之服務暫停、中斷或無法正常運作。
-              ● 天災或其他不可抗力所致之服務暫停、中斷或無法正常運作。 12. 客源網受理完成您的帳號手續後，如發生下列事項而致該帳號所發生之損失，應由您完全負擔： ● 您未妥善保管帳號密碼。 ● 您自行將帳號密碼提供與他人。
-              ● 您未使用第三方支付業者所提供的帳號安全機制。 ● 其他因您故意或重大過失所致之事由。 13.會員如因參加會員過程中而遭受任何損失，客源網及相關之母公司、子公司、關係企業、員工、及代理商不負任何責任。 14.如本活動因不可抗力之特殊原因無法執行時，客源網有權決定取消、終止、修改或暫停本活動。
-              15. 會員所獲得的客源網之客戶機密資訊，不得以口頭、書面、影印、複製、交付、攝影、傳閱、電子傳送、文章發表或其他方式，洩漏予第三人或使第三人知悉之，亦不得將客戶資料資訊出售、轉讓、交付或授權第三人使用，如經發現，客源網有權決定取消、終止或暫停其會員權利，並追究會員之相關法律責任外，並得請求賠償客源網因此所生之損失與費用（包括所失利益及律師費用），會員並自負相關法律責任。
-              16. 會員因參與接案而取得有關客戶之資料，僅得為該次接案目的使用，不得提供其他用途使用，經查證屬實，得取消其會員資格，會員應自負相關法律責任，若客源網因遭第三人請求、索賠、提出民、刑事訴訟或主張任何法律上之權利，會員應賠償客源網因此所生之全部損失與費用，並同意我們使用您所提供與客源網的個人資料作為必要之使用。
-              17.客源網會因應不同時期調整接案規則,客源網有權決定或修改接案方式。
+            <p>廣告行銷百百種,往往花了大筆廣告預算卻遲遲等不到消費者上門 客源網相信不管使用任何廣告行銷模式最終目的還是希望能帶來客戶, 如果花相同廣告費用,那為什麼不選擇一個能真正為你帶來客戶的網站 客源網提供的是一個業者與消費者的平台,讓業者能更輕易的找到有需求的消費者
+              當消費者有任何搬家 清潔 買屋 裝潢等需求,就會在客源網留下相關資料 業者只需要登入會員,即可立即查詢消費者需求以及聯絡方式 與其花大錢等待客戶上門,不如加入客源網主動和客戶聯絡。
             </p>
           </div>
         </div>
