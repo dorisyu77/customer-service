@@ -14,6 +14,10 @@ h6 {
 		background-color: #0075cd;
 		border-color: #0075cd;
 		margin: 0px 5px;
+		@media (max-width: 767px) {
+			width: 100px;
+			margin-left: 15px;
+		}
 	}
 }
 
@@ -52,6 +56,10 @@ h6 {
 		vertical-align: middle;
 		padding: 7px 10px;
 		border-radius: 4px;
+		@media (max-width: 767px) {
+			width: 100px;
+			margin-left: 15px;
+		}
 		&:hover {
 			background-color: #0075cd;
 			border-color: #0075cd;
@@ -72,6 +80,10 @@ h6 {
 			vertical-align: middle;
 			padding: 7px 10px;
 			border-radius: 4px;
+			@media (max-width: 767px) {
+				width: 100px;
+				margin-left: 15px;
+			}
 		}
 	}
 }

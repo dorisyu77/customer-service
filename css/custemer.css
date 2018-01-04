@@ -14,6 +14,10 @@ h6 {
     background-color: #0075cd;
     border-color: #0075cd;
     margin: 0px 5px; }
+    @media (max-width: 767px) {
+      .nav-blue-btn .btn-info {
+        width: 100px;
+        margin-left: 15px; } }
 
 .top-area p {
   margin-right: 10px; }
@@ -42,6 +46,10 @@ h6 {
   vertical-align: middle;
   padding: 7px 10px;
   border-radius: 4px; }
+  @media (max-width: 767px) {
+    .navbar-custom ul.nav li a.signup-btn {
+      width: 100px;
+      margin-left: 15px; } }
   .navbar-custom ul.nav li a.signup-btn:hover {
     background-color: #0075cd;
     border-color: #0075cd;
@@ -62,6 +70,10 @@ h6 {
     vertical-align: middle;
     padding: 7px 10px;
     border-radius: 4px; }
+    @media (max-width: 767px) {
+      .navbar-custom ul.nav li a.signup-btn:hover {
+        width: 100px;
+        margin-left: 15px; } }
 
 .modal-header {
   background-color: #0075cd;
