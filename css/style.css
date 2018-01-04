@@ -31,7 +31,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "微軟正黑體",'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: inherit;
   line-height: inherit;
 }
